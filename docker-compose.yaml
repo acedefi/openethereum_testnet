@@ -114,7 +114,7 @@ services:
       - pos3
       - pos4
   entry:
-    image: "newetc6"
+    image: "nara7875/etcexplorer:1"
     ports:
       - 3000:3000
     restart: always
