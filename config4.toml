@@ -7,7 +7,7 @@ base_path = "/openethereum/"
 port = 30308
 reserved_peers=  "/openethereum/nodes" 
 allow_ips = "all"
-discovery = false
+discovery = true
 
 [rpc]
 port = 8550
@@ -17,7 +17,7 @@ cors = ["all"]
 
 [websockets]
 disable = false
-port = 10546
+port = 10549
 interface = "all"
 origins = ["none"]
 apis = ["all"]
@@ -27,7 +27,7 @@ hosts = ["all"]
 password = ["/openethereum/password"] 
 
 [mining]
-engine_signer = "0x27f91dafa072771f4bc2bed30b46b16219f9e6c3"  
+engine_signer = "0x317a9ebff21d415ab4f3fcf65fb77991ecd9dbd2"  
 gas_floor_target = "40000000"
 
 [misc]
