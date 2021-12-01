@@ -1,48 +1,45 @@
 {
-    "name": "ethereum",
-    "engine": {
-      "authorityRound": {
-        "params": {
-          "blockReward": "0x4563918244F40000",
-          "stepDuration": "1",
-          "validators": {
-            "list": [
-              "0x6624688a9294571ea8376f2ba26c4fd450a5c1ab",
-              "0xc47a9ba83ef32d136bc8f623f4225237ff7bcfd7",
-              "0xfd078fb1ad8580126718f4b398ac52d7267f9d1d",
-              "0x324bdd8f3e37ce5e41bfb397a42c2276ad753280"
-            ]
-          }
+  "name": "ethereum",
+  "engine": {
+    "authorityRound": {
+      "params": {
+        "blockReward": "0x4563918244F40000",
+        "stepDuration": "1",
+        "validators": {
+          "list": [
+            "0x72d6424dbc29fc63eda6af9742d0ebadb57717c6"
+          ]
         }
-      }
-    },
-  
-    "params": {
-      "gasLimitBoundDivisor": "0x400",
-      "maximumExtraDataSize": "0x20",
-      "minGasLimit": "0x1388",
-      "networkID": "0x1692",
-      "eip155Transition": 0,
-      "validateChainIdTransition": 0,
-      "eip140Transition": 0,
-      "eip211Transition": 0,
-      "eip214Transition": 0,
-      "eip658Transition": 0
-    },
-    "genesis": {
-      "seal": {
-        "authorityRound": {
-          "step": "0x0",
-          "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-        }
-      },
-      "difficulty": "0x10",
-      "gasLimit": "0x2625A00"
-    },
-    "accounts": {
-      "0xc47a9ba83ef32d136bc8f623f4225237ff7bcfd7": {
-        "balance": "20000000000000000000000000"
       }
     }
+  },
+
+  "params": {
+    "gasLimitBoundDivisor": "0x400",
+    "maximumExtraDataSize": "0x20",
+    "minGasLimit": "0x1388",
+    "networkID": "0x77f",
+    "eip155Transition": 0,
+    "validateChainIdTransition": 0,
+    "eip140Transition": 0,
+    "eip211Transition": 0,
+    "eip214Transition": 0,
+    "eip658Transition": 0
+  },
+  "genesis": {
+    "seal": {
+      "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x10",
+    "gasLimit": "0x2625A00"
+  },
+  "accounts": {
+    "0x72d6424dbc29fc63eda6af9742d0ebadb57717c6": {
+      "balance": "10000000000000000000000000"
+    }
   }
-  
+}
+

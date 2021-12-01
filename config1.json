@@ -1,6 +1,6 @@
 {
     "nodeAddr":     "host.docker.internal",
-    "wsPort":       10546,
+    "wsPort":       10646,
     "startBlock":   0,
     "endBlock":     "latest",
     "quiet":        true,

@@ -3,23 +3,20 @@ chain = "/openethereum/genesis.json"
 base_path = "/openethereum/" 
 
 [network]
-port = 30307
+port = 30317
 reserved_peers=  "/openethereum/nodes" 
 allow_ips = "all"
-# Override the bootnodes from selected chain file.
-#bootnodes = ["enode://XXX@localhost:30300", "enode://XXXX@localhost:30301"]
-# Enable or disable new peers discovery.
 discovery = true
 
 [rpc]
-port = 8549
+port = 8649
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces" ,"rpc", "parity_accounts"]
 interface = "all"
 cors = ["all"]
 
 [websockets]
 disable = false
-port = 10548
+port = 10648
 interface = "all"
 origins = ["none"]
 apis = ["all"]
@@ -29,7 +26,7 @@ hosts = ["all"]
 password = ["/openethereum/password"] 
 
 [mining]
-engine_signer = "0x6624688a9294571ea8376f2ba26c4fd450a5c1ab"  
+engine_signer = "0x4436631695258e3a3c441db151ee054b3e1e06d4"  
 gas_floor_target = "40000000"
 
 [misc]
