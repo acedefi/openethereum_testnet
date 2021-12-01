@@ -5,10 +5,10 @@ If you have docker, just command `$ docker-compose up`
 If not, please install docker.
 
 ## 2. view private network block information
-- ACT_COIN: http://localhost:3001
-- GGOM_COIN: http://localhost:3002
-- ONE_COIN: http://localhost:3003
-- HEINI_COIN: http://localhost:3004
+- ACT_COIN: http://localhost:3011
+- GGOM_COIN: http://localhost:3012
+- ONE_COIN: http://localhost:3013
+- HEINI_COIN: http://localhost:3014
 Also, you need to using metamask for transaction.
 
 
