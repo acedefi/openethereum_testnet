@@ -118,7 +118,7 @@ services:
   #     - pos4_1
 
   entry1_2:
-    image: "nara7875/etcexplorer:1"
+    image: "nara7875/etcexplorer:5"
     ports:
       - 3011:3000
     restart: always
@@ -135,7 +135,7 @@ services:
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
   
   entry2_2:
-    image: "nara7875/etcexplorer:1"
+    image: "nara7875/etcexplorer:5"
     ports:
       - 3012:3000
     restart: always
@@ -152,7 +152,7 @@ services:
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
   
   entry3_2:
-    image: "nara7875/etcexplorer:1"
+    image: "nara7875/etcexplorer:5"
     ports:
       - 3013:3000
     restart: always
@@ -169,7 +169,7 @@ services:
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
   
   entry4_2:
-    image: "nara7875/etcexplorer:1"
+    image: "nara7875/etcexplorer:5"
     ports:
       - 3014:3000
     restart: always
@@ -181,8 +181,10 @@ services:
       - ./config4.json:/config.json
       - ./HEINI1.png:/public/img/explorer-logo.png
       - ./explorer1/favicon.ico:/public/favicon.ico
+      # - ./db.js:/db.js
     environment:
       MONGO_URI: mongodb://host.docker.internal/HEINI1
+      # MONGO_URI: mongodb+srv://coin123:acentcoin123@heini.w6fbk.mongodb.net/HEINI?retryWrites=true&w=majority
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
   
   db_1:
