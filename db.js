@@ -146,11 +146,11 @@ module.exports.TokenTransfer = mongoose.model('TokenTransfer');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGO_URI || 'mongodb://host./explorerDB', {
-  useMongoClient: true
+  useMongoClient: true,
   // poolSize: 5,
   // rs_name: 'myReplicaSetName',
-  // user: 'explorer',
-  // pass: 'yourdbpasscode'
+  user: 'coin123',
+  pass: 'acentcoin123'
 });
 
 // mongoose.set('debug', true);
