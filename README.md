@@ -10,5 +10,3 @@ If not, please install docker.
 - ONE_COIN: http://localhost:3013
 - HEINI_COIN: http://localhost:3014
 Also, you need to using metamask for transaction.
-
-

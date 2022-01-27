@@ -98,24 +98,6 @@ services:
       sh -c "cd ~/
             /openethereum/target/release/openethereum --config /openethereum/config.toml"
     working_dir: /openethereum
-  # poscli:
-  #   image: "nara7875/openethereum:0"
-  #   tty: true
-  #   container_name: pos-cli_1
-  #   working_dir: /openethereum
-  #   command: /bin/bash
- 
-  #   links:
-  #     - pos1_1:pos1_1
-  #     - pos2_1:pos2_1
-  #     - pos3_1:pos3_1
-  #     - pos4_1:pos4_1
-    
-  #   depends_on:
-  #     - pos1_1
-  #     - pos2_1
-  #     - pos3_1
-  #     - pos4_1
 
   entry1_2:
     image: "nara7875/etcexplorer:5"
@@ -130,6 +112,8 @@ services:
       - ./config1.json:/config.json
       - ./ACT1.png:/public/img/explorer-logo.png
       - ./explorer1/favicon.ico:/public/favicon.ico
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       MONGO_URI: mongodb://host.docker.internal/ACT1
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
@@ -147,6 +131,8 @@ services:
       - ./config2.json:/config.json
       - ./GGOM.png:/public/img/explorer-logo.png
       - ./explorer1/favicon.ico:/public/favicon.ico
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       MONGO_URI: mongodb://host.docker.internal/GGOM1
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
@@ -164,6 +150,8 @@ services:
       - ./config3.json:/config.json
       - ./ONE.png:/public/img/explorer-logo.png
       - ./explorer1/favicon.ico:/public/favicon.ico
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       MONGO_URI: mongodb://host.docker.internal/ONE1
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
@@ -181,10 +169,10 @@ services:
       - ./config4.json:/config.json
       - ./HEINI1.png:/public/img/explorer-logo.png
       - ./explorer1/favicon.ico:/public/favicon.ico
-      # - ./db.js:/db.js
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       MONGO_URI: mongodb://host.docker.internal/HEINI1
-      # MONGO_URI: mongodb+srv://coin123:acentcoin123@heini.w6fbk.mongodb.net/HEINI?retryWrites=true&w=majority
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 20 -- npm run start"
   
   db_1:
@@ -200,8 +188,3 @@ services:
       - ./data:/data/db
     environment:
       MONGO_INITDB_DATABASE: "[ACT1, GGOM1, HEINI1, ONE1]"
-    
-
-
-
-  
