@@ -19,7 +19,7 @@ services:
       - ./genesis1.json:/openethereum/genesis.json
       - ./password:/openethereum/password
       - ./nodes:/openethereum/nodes
-      - ./keys1:/openethereum/keys
+      - ./keys1/ethereum:/openethereum/keys
     container_name: posa1
     command: >
       sh -c "cd ~/
@@ -43,7 +43,7 @@ services:
       - ./genesis1.json:/openethereum/genesis.json
       - ./password:/openethereum/password
       - ./nodes:/openethereum/nodes
-      - ./keys2:/openethereum/keys
+      - ./keys2/ethereum:/openethereum/keys
     container_name: posa2
     command: >
       sh -c "cd ~/
@@ -67,7 +67,7 @@ services:
       - ./genesis1.json:/openethereum/genesis.json
       - ./password:/openethereum/password
       - ./nodes:/openethereum/nodes
-      - ./keys3:/openethereum/keys
+      - ./keys3/ethereum:/openethereum/keys
     container_name: posa3
     command: >
       sh -c "cd ~/
@@ -91,7 +91,7 @@ services:
       - ./genesis1.json:/openethereum/genesis.json
       - ./password:/openethereum/password
       - ./nodes:/openethereum/nodes
-      - ./keys4:/openethereum/keys
+      - ./keys4/ethereum:/openethereum/keys
     container_name: posa4
     command: >
       sh -c "cd ~/
