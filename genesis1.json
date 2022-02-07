@@ -7,7 +7,10 @@
           "stepDuration": "1",
           "validators": {
             "list": [
-              "0x6ec63098aa253fe2d1c003d88f8bbadd6807ff0c"
+              "0x4e42a7d90b861fce9c12808055ccffbfaa6d3920",
+              "0x1dc850abbebd8a64ab2a4963211202db33ebba49",
+              "0x0af22e69df8c8864bc00aa5472fde0f07c21a5c1",
+              "0x006b1320ecc99db3066d5491381606f69f6b56d1"
             ]
           }
         }
@@ -18,7 +21,7 @@
       "gasLimitBoundDivisor": "0x400",
       "maximumExtraDataSize": "0x20",
       "minGasLimit": "0x1388",
-      "networkID": "0x77e",
+      "networkID": "0xbf4",
       "eip155Transition": 0,
       "validateChainIdTransition": 0,
       "eip140Transition": 0,
@@ -37,8 +40,11 @@
       "gasLimit": "0x2625A00"
     },
     "accounts": {
-      "0x6ec63098aa253fe2d1c003d88f8bbadd6807ff0c": {
-        "balance": "10000000000000000000000000"
+      "0x4e42a7d90b861fce9c12808055ccffbfaa6d3920": {
+        "balance": "100000000000000000000000000000000"
+      },
+      "0x1dc850abbebd8a64ab2a4963211202db33ebba49": {
+        "balance": "200000000000000000000000000000000"
       }
     }
   }

@@ -1,0 +1,16 @@
+{
+  "environment": "live",
+  "debug": false,
+  "Captcha": {
+    "secret": "6Lds5PcaAAAAABX8z32r78RQ_mRrLpaRLmbydPTF"
+  },
+  "Ethereum": {
+    "EtherToTransfer": "500",
+    "gasLimit": "42000",
+    "live": {
+      "rpc": "http://testsk.acent.online",
+      "account": "0x1dc850abbebd8a64ab2a4963211202db33ebba49",
+      "privateKey": "db05a28dce1d898e283035b52de726c1143412774dadcfb886ff9c0fb228ad11"
+    }
+  }
+}

@@ -3,31 +3,27 @@ chain = "/openethereum/genesis.json"
 base_path = "/openethereum/" 
 
 [network]
-port = 30318
+port = 3031
 reserved_peers=  "/openethereum/nodes" 
 allow_ips = "all"
 discovery = true
 
 [rpc]
-port = 8650
+port = 8647
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces" ,"rpc", "parity_accounts"]
 interface = "all"
 cors = ["all"]
-
-[websockets]
-disable = false
-port = 10649
-interface = "all"
-origins = ["none"]
-apis = ["all"]
-hosts = ["all"]
 
 [account]
 password = ["/openethereum/password"] 
 
 [mining]
-engine_signer = "0xfdc352aa9a01688284f42d29c009db55370c17ea"  
+engine_signer = "0x006b1320ecc99db3066d5491381606f69f6b56d1"  
 gas_floor_target = "40000000"
+reseal_on_txs = "none" 
+usd_per_tx = "0" 
+force_sealing = true
+refuse_service_transactions = false
 
 [misc]
 logging = "own_tx=trace"
