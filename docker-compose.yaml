@@ -99,7 +99,7 @@ services:
     working_dir: /openethereum
 
   scan:
-    image: "nara7875/acentscan:18"
+    image: "nara7875/acentscan:17"
     ports:
       - 3013:3000
     restart: always
@@ -115,7 +115,7 @@ services:
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 30 -- npm run start"
 
   faucet:
-    image: "nara7875/acentfaucet:1"
+    image: "nara7875/acentfaucet:2"
     ports:
       - 3014:3001
     restart: always
