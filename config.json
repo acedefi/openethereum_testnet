@@ -5,7 +5,7 @@
     "secret": "6Lds5PcaAAAAABX8z32r78RQ_mRrLpaRLmbydPTF"
   },
   "Ethereum": {
-    "EtherToTransfer": "500",
+    "EtherToTransfer": "1000",
     "gasLimit": "42000",
     "live": {
       "rpc": "http://testsk.acent.online:8647",
