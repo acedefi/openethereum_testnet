@@ -108,8 +108,8 @@ services:
       - db
     volumes:
       - ./config1.json:/config.json
-    # extra_hosts:
-    #   - "host.docker.internal:host-gateway"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       MONGO_URI: mongodb://host.docker.internal/blockDB
     command : bash -c "/wait-for-it.sh -h mongo -p 27017 -t 30 -- npm run start"
