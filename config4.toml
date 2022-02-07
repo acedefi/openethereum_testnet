@@ -3,7 +3,7 @@ chain = "/openethereum/genesis.json"
 base_path = "/openethereum/" 
 
 [network]
-port = 3031
+port = 30318
 reserved_peers=  "/openethereum/nodes" 
 allow_ips = "all"
 discovery = true

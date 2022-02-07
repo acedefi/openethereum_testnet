@@ -99,7 +99,7 @@ services:
     working_dir: /openethereum
 
   scan:
-    image: "nara7875/acentscan:17"
+    image: "nara7875/acentscan:18"
     ports:
       - 3013:3000
     restart: always
