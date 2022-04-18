@@ -8,8 +8,8 @@
     "EtherToTransfer": "1000",
     "gasLimit": "42000",
     "live": {
-      "rpc": "http://testsk.acent.online:8647",
-      "account": "0x1dc850abbebd8a64ab2a4963211202db33ebba49",
+      "rpc": "https://main.dorenscan.com",
+      "account": "0x72d6424dbc29fc63eda6af9742d0ebadb57717c6",
       "privateKey": "db05a28dce1d898e283035b52de726c1143412774dadcfb886ff9c0fb228ad11"
     }
   }

@@ -11,7 +11,7 @@ services:
       - 10646:10646
     environment:
       ENV: ETHERNODE1
-      RPCPORT: 8647
+      RPCPORT: 8545
       PORT: 30315
       RUST_BACKTRACE: 1
     volumes:
@@ -35,7 +35,7 @@ services:
       - posa1
     environment:
       ENV: ETHERNODE2
-      RPCPORT: 8647
+      RPCPORT: 8545
       PORT: 30316
       RUST_BACKTRACE: 1
     volumes:
@@ -59,7 +59,7 @@ services:
       - 30317:30317
     environment:
       ENV: ETHERNODE3
-      RPCPORT: 8647
+      RPCPORT: 8545
       PORT: 30317
       RUST_BACKTRACE: 1
     volumes:
@@ -83,7 +83,7 @@ services:
       - 30318:30318
     environment:
       ENV: ETHERNODE4
-      RPCPORT: 8647
+      RPCPORT: 8545
       PORT: 30318
       RUST_BACKTRACE: 1
     volumes:
